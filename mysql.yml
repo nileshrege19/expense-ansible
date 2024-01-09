@@ -5,7 +5,7 @@
     - name: Disable default version of MySQL in the system
       ansible.builtin.shell: dnf module disable mysql -y
 
-    - name: Copy repo file
+    - name: Copy expense configuration file
       ansible.builtin.copy:
         src: mysql.repo
         dest: /etc/yum.repos.d/mysql.repo
